@@ -45,10 +45,14 @@ Virtual Machine Manager : 운영체제를 여러 개 돌릴 수 있다.
 Ex) VMware, Xen, virtual box
 
 12. 다양한 환경의 OS
-Mobile, Client-Server(1:1), Peer-to-Peer(P2P, N:N), Cloud, Real-Time Embedded Systems.
+Mobile
+Client-Server(1:1)
+Peer-to-Peer(P2P, N:N)
+Cloud
+Real-Time Embedded Systems.
 
-### Chap2
-.
+### Chap2.
+
 1. OS가 제공하는 환경
 UI
 Program execution
@@ -66,9 +70,8 @@ GUI : Graphical User Interface (Windows, Aqua for MacOS
 Touch-Screen Interface : Android UI, IOS UI
 
 3. System Calls
-Services made avilable by the OS
+Services made available by the OS
 API : Application Programming Interface
-
 Ex)
 Process Control: fork(), exit(), wait()
 File Manipulation : open(), read(), write(), close()
@@ -119,8 +122,8 @@ Interrupt 발생 시 PC가 어디까지 실행됬는지 저장, 나중에 복원
 The creating process : a parent process
 A newly created process : a child process
 주로 fork() 사용
-Parent 와 child가 동시에 실행되거나 / child가 끝날 때까지 기다리거나
 
+Parent 와 child가 동시에 실행되거나 / child가 끝날 때까지 기다리거나
 child는 parent를 복제 하거나 새로운 프로그램을 로드하거나
 
 
@@ -128,13 +131,9 @@ child는 parent를 복제 하거나 새로운 프로그램을 로드하거나
 Return 값을 반환해서 끝나는 경우
 exit() system call로 강제 종료
 
-OS는 resources를 회수한다. 
-(Allocated memories, open files, I/O buffers, etc)
+OS는 resources를 회수한다. (Allocated memories, open files, I/O buffers, etc)
 
 11. Zombie and Orphan
-Zombie process : child가 종료되었지만 parent가 child의 종료 상태를 회수하지 않았을 경우(wait() 호출을 하지 않음)
+Zombie process : child가 종료되었지만 parent가 child의 종료 상태를 회수하지 않았을 경우( wait() 호출을 하지 않음)
 Orphan process : parent가 wait()을 하지 않고 child보다 먼저 종료
-
-
-
 
